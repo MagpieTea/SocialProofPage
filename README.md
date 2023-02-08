@@ -33,60 +33,60 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/MagpieTea/SocialProofPage.git)
+- Live Site URL: (https://magpietea.github.io/SocialProofPage/)
 
 ## My process
+  Since this project involved many more sections than any I have previously worked with, I started by using color-blocking to create the right layout. Once I had the right flow, I started entering the content where it belonged and styling it. It took me roughly 6 hours to complete start to finish, which is significantly faster than my last flex-box based challenge.
 
+  I used grid to create the off-set star-rating boxes, because it allowed me to set their position more easily than flexbox did. Most divs were flex-box based since that allowed me the most flexibility (pun!) with positioning.
+  
 ### Built with
 
-- Semantic HTML5 markup
+- Semantic HTML5 markup (sort of; still working on proper semantics!)
 - CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I used css grid for the first time in this project, albeit in a small way. I also really connected the dots on the difference between justify content, justify items and justify self. I learned about using background to repeat an image (though I didn't end up doing that for the stars). 
 
-To see how you can add code snippets, see below:
 
+I'm proud of this html because I really leaned in to divs. I used more layers than I have before. I also worked with assigning classes and id's to items to target them for different purposes.
 ```html
-<h1>Some HTML code I'm proud of</h1>
+ <div class="ratings"> 
+          <div class="rating-box" id="rating-1">
+            <div class="stars"> 
 ```
+
+I'm proud of this css because it's the first time I've used grid, and I loved how easily I could position my ratings boxes using it. I realized that if I made my ratings-boxes responsive to the viewport width that I could keep these three spread out in the same staggered pattern, but have them scale in or out based on the viewport, using this method.
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.ratings{
+  display: grid;
+  width: 50%;
+  margin: 5% auto auto auto;
+}
+#rating-1{
+  justify-self: start;
+}
+#rating-2{
+  justify-self: center;
+}
+#rating-3{
+  justify-self: end;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Now that I have dipped my toe into css grid, I'd like to go all-out and figure out how to apply it in more complex ways, using the full long-hand layout.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+I primarily used mdn and w3schools for documentation on css properties.
 
 ## Author
 
